@@ -10,10 +10,23 @@ group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
-  gem 'html5-boilerplate', :group => :production, :git => 'git://github.com/sporkd/compass-html5-boilerplate.git'
 end
 
+# JavasScript libs
 gem 'jquery-rails'
+gem 'modernizr-rails'
+
+# Stylesheet libs
+gem 'blueprint-rails'
+
+# Ajax request CoffeeScript support
+# gem 'coffeebeans'
+
+# Heroku deployment requirements
+# group :production do
+#   gem 'therubyracer-heroku'
+#   gem 'pg'
+# end
 
 # Use unicorn as the web server
 # gem 'unicorn'
