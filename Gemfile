@@ -28,6 +28,9 @@ gem 'blueprint-rails'
 #   gem 'pg'
 # end
 
+gem 'execjs'
+gem 'therubyracer'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
