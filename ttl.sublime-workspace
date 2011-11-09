@@ -1,0 +1,516 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"import",
+				"import  (rule)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"rails",
+				"Set Syntax: HTML (Rails)"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 115.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/slitobac/Documents/Development/chanarally/config/deploy.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/corporate_account/registrations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/controllers/auction_controller.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/config/routes.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/brokers/registrations/ifx/corporate_account.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/brokers/shared/forms/_corporate_account_basic_form.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/brokers/shared/forms/_personal_account_basic_form.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/brokers/registrations/ifx/personal_account.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/Gemfile",
+		"/Users/slitobac/Documents/Development/auctionfx/config/environment.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/corporate_account/confirmations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/controllers/home_controller.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/home/index.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/home/dashboard.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/auction/show.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/personal_registration/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/bid/complete.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/bid/show.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/controllers/bid_controller.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20111026120811_devise_create_corporate_accounts.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/auction.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/corporate_account.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/auction_observer.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/broker.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/personal_registration.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/personal_account.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/controllers/personal_registration_controller.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/personal_account/registrations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/broker_currency.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/controllers/application_controller.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/layouts/application.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/javascripts/application.js",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/javascripts/home.js.coffee",
+		"/Users/slitobac/Documents/Development/auctionfx/vendor/assets/javascripts/bootstrap-modal.js",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/rate.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/javascripts/auction.js.coffee",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/home.css.scss",
+		"/Users/slitobac/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20111020144401_create_rates.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/currency.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/vendor/assets/stylesheets/mixins.scss",
+		"/Users/slitobac/Documents/Work/Business/MyCurrencyTransfer/Auction FX/Interbank/xignite/ListCurrencies.xml",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/bootstrap-1.3.0.css",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/javascripts/brokers.js.coffee",
+		"/Users/slitobac/Documents/Development/auctionfx/app/controllers/brokers_controller.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/brokers/show.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/brokers.css.scss",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/application.css.scss",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/application.css",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/home/dashboard.html:erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/bootstrap-1.2.0.css",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/country.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/config/application.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/Extensions/uuid.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/bid.rb",
+		"/Users/slitobac/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/slitobac/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110920102128_create_bids.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110906222950_create_auctions.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/auction/initializers.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110903195710_create_factor_ages.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_age.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/helpers/application_helper.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/auction_observer_observer.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/assets/stylesheets/bootstrap-1.0.0.css",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/personal/registrations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110913104642_devise_create_personals.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/personal.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/personals/registrations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/config/initializers/devise.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/Personal/registrations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/personals/sessions/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/config/locales/devise.en.yml",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/devise/registrations/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/personals/passwords/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_amount.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110908164325_devise_create_users.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/user.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110913104434_devise_create_personals.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/views/devise/unlocks/new.html.erb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110906222910_create_auction_fxes.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/service.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/minimum_amount.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_transfer_reason.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_transfer_frequency.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_occupation.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_margin.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_house_price.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/factor_country.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/db/migrate/20110826155459_create_countries.rb",
+		"/Users/slitobac/Documents/Development/auctionfx/.bundle/config",
+		"/Users/slitobac/Documents/Development/auctionfx/app/models/.gitkeep",
+		"/Users/slitobac/Documents/Development/mct_newsroom/db/migrate/20110819151444_devise_create_users.rb",
+		"/Users/slitobac/Documents/Development/mct_newsroom/app/views/devise/shared/_links.erb",
+		"/Users/slitobac/Documents/Development/mct_newsroom/config/application.rb",
+		"/Users/slitobac/Documents/Development/mct_newsroom/config/database.yml",
+		"/Users/slitobac/Documents/Development/mct_newsroom/Gemfile",
+		"/Users/slitobac/Documents/Development/admin/app/views/leads/show.html.erb",
+		"/Users/slitobac/Documents/Development/admin/app/controllers/leads_controller.rb",
+		"/Users/slitobac/Documents/Development/admin/app/controllers/application_controller.rb",
+		"/Users/slitobac/Documents/Development/admin/Gemfile",
+		"/Users/slitobac/Documents/Development/admin/config/database.yml",
+		"/Users/slitobac/Documents/Development/venue_management/public/stylesheets/vm.css",
+		"/Users/slitobac/Documents/Development/venue_management/config/assets.yml",
+		"/Users/slitobac/Documents/Development/venue_management/public/assets/common.css",
+		"/Users/slitobac/Documents/Development/venue_management/config/database.yml",
+		"/Users/slitobac/Documents/Development/venue_management/Gemfile",
+		"/Users/slitobac/Documents/Development/venue_management/app/controllers/attractions_controller.rb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/attractions/show.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/attractions/new.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/attractions/index.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/attractions/edit.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/attractions/_form.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/contacts/show.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/contacts/index.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/venues/index.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/nearby_facilities/new.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/nearby_facilities/show.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/styles/index.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/venues/show.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/meeting_rooms/_form.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/controllers/meeting_rooms_controller.rb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/meeting_rooms/show.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/meeting_rooms/index.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/nearby_facilities/_form.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/nearby_facilities/edit.html.erb",
+		"/Users/slitobac/Documents/Development/venue_management/app/views/nearby_facilities/index.html.erb"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"text_field",
+			"\n    <%= f.label .*",
+			"\n    <%= f.label :[.+] %><br />",
+			"\n  </div>\n  <div class=\"field\">",
+			"get_acc",
+			"@current_user",
+			"@account_type",
+			"account_ty",
+			"account_Ty",
+			"@current_user",
+			"form_For",
+			"form",
+			"complete_",
+			"def create",
+			"def create ",
+			":through",
+			"current_personal",
+			"current_u",
+			"personal",
+			"link_to",
+			"div",
+			"to_f",
+			"bar a:hover",
+			"a:hover",
+			"/",
+			"\"",
+			"url",
+			"table",
+			"destroy_personal_account_session_path",
+			"rate",
+			"\n\n            <div class=\"clearfix\">\n              <%= a.label :transfer_from %>\n              <div class=\"input\">\n                <%= a.select :transfer_from, country_select_values %>\n              </div>\n            </div>",
+			"lambda",
+			"	",
+			"devise_for",
+			"accepts_nested_attributes_for",
+			"`",
+			"lock",
+			"authen",
+			", :only => [:create, :edit, :index, :new, :update, :destroy, :show]",
+			"style",
+			"meeting",
+			"meetin",
+			"meeting_room",
+			"meeting_rooms",
+			"style",
+			"styles",
+			"venue",
+			"style",
+			"contact",
+			"contacts",
+			"show",
+			"th>",
+			"th>\n\n\n\n\n\n\nth>",
+			"th>",
+			"th"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"input",
+			"",
+			"  ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"depl",
+				"config/deploy.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"apphelp",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"dashbo",
+				"app/views/home/dashboard.html.erb"
+			],
+			[
+				"auc",
+				"app/controllers/auction_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"brokercurr",
+				"app/models/broker_currency.rb"
+			],
+			[
+				"broker",
+				"app/models/broker.rb"
+			],
+			[
+				"persac",
+				"app/models/personal_account.rb"
+			],
+			[
+				"personreg",
+				"app/models/personal_registration.rb"
+			],
+			[
+				"bserv",
+				"app/models/auction_observer.rb"
+			],
+			[
+				"appjs",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"applht",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"apphtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"index",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"appht",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"auct",
+				"app/models/auction.rb"
+			],
+			[
+				"bid",
+				"app/models/bid.rb"
+			],
+			[
+				"app",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"pers",
+				"app/models/personal.rb"
+			],
+			[
+				"auctionrb",
+				"app/models/auction.rb"
+			],
+			[
+				"devi",
+				"config/initializers/devise.rb"
+			],
+			[
+				"homeco",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"home",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"appl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"gemfil",
+				"Gemfile"
+			],
+			[
+				"dev",
+				"db/migrate/20110819151444_devise_create_users.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"assets",
+				"config/assets.yml"
+			],
+			[
+				"venuecon",
+				"app/controllers/venues_controller.rb"
+			],
+			[
+				"show",
+				"app/views/venues/show.html.erb"
+			],
+			[
+				"meetcon",
+				"app/controllers/meeting_rooms_controller.rb"
+			],
+			[
+				"inde",
+				"app/views/venues/index.html.erb"
+			],
+			[
+				"contacon",
+				"app/controllers/contacts_controller.rb"
+			],
+			[
+				"edit",
+				"app/views/venues/edit.html.erb"
+			],
+			[
+				"apphe",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"giti",
+				".gitignore"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/slitobac/Documents/Development/mtm_app/mtm_app.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.03515625,
+	"status_bar_visible": true
+}
