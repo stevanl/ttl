@@ -4,7 +4,8 @@
 
 
 // Links
-$linkColor:         #0069d6;
+// $linkColor:         #0069d6;
+$linkColor:         #b39353;
 $linkColorHover:    darken($linkColor, 15);
 
 // Grays
@@ -24,6 +25,12 @@ $yellow:            #ffc40d;
 $orange:            #f89406;
 $pink:              #c3325f;
 $purple:            #7a43b6;
+$gold:              #b39353;
+
+// TT colours
+$gold:              #b39353;
+$goldDark:          darken($gold, 10%);
+$goldLight:         lighten($gold, 25%);
 
 // Baseline grid
 $basefont:          13px;

@@ -1,3 +1,16 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#shell {
+  margin: 0 auto;
+  width: 980px;
+  background: $white;
+}
+#footer {
+  width: 940px;
+  margin: 0 auto auto;
+}
+.footer {
+  font-size: 9pt;
+  padding: 10px 0;
+  span {
+    margin: 0 10px 0 0;
+  }
+}

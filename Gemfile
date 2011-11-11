@@ -3,9 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0'
 gem 'mysql2'
 gem 'simple_form'
+gem 'haml'
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
@@ -19,26 +18,8 @@ gem 'modernizr-rails'
 # Stylesheet libs
 gem 'blueprint-rails'
 
-# Ajax request CoffeeScript support
-# gem 'coffeebeans'
-
-# Heroku deployment requirements
-# group :production do
-#   gem 'therubyracer-heroku'
-#   gem 'pg'
-# end
-
 gem 'execjs'
 gem 'therubyracer'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output

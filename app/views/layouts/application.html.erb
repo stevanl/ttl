@@ -17,9 +17,56 @@
   <%= javascript_include_tag "modernizr" %>
 </head>
 
-<body>
-  <%= yield %> <!--! end of #container -->
+<body style="background-color: #efefef">
+
+
+<div id="shell">
+  <div id="container" class="container">
+    <div id="header" >
+      <%= image_tag('/images/ttl-banner.png') %>
+      <ul class="pills" data-tabs="tabs">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><%= link_to 'Overview', overview_path %></li>
+        <li><%= link_to 'Brochure Form', '#' %></li>
+        <li><%= link_to 'RSVP Form', '#' %></li>
+        <li><%= link_to 'Nomination Form', '#' %></li>
+        <li><%= link_to 'Table Booking Form', '#' %></li>
+        <li><%= link_to 'About TrainE-TraidE', '#' %></li>
+      </ul>
+    </div><!-- /header -->
+    <div id="main">
+      <%= yield %>
+    </div><!-- /main -->
+  </div>
+</div>
+<div id="footer">
+  <div class="footer">
+    <span>314 Regents Park Road, London N3 2JX</span> <span>Tel: 020 8371 3280</span> <span>Fax: 020 8346 1036</span> <span>email: <a href="mailto:admin@traine.org.uk">admin@traine.org.uk</a></span>
+  </div><!-- /footer -->
+</div><!-- /footer -->
+
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript">
+    jQuery(window).load(function(){
+        jQuery("#ttlslider").nivoSlider({
+            effect:"random",
+            slices:15,
+            boxCols:8,
+            boxRows:4,
+            animSpeed:500,
+            pauseTime:3000,
+            startSlide:0,
+            directionNav:true,
+            directionNavHide:true,
+            controlNav:true,
+            controlNavThumbs:false,
+            controlNavThumbsFromRel:true,
+            keyboardNav:true,
+            pauseOnHover:true,
+            manualAdvance:false
+        });
+    });
+  </script>
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
