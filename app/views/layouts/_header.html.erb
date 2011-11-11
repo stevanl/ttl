@@ -2,7 +2,7 @@
 
 <div class="nav-top">
   <ul class="pills" data-tabs="tabs">
-    <li><%= link_to 'Brochure Form', '#' %></li>
+    <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'brochures' %>"><%= link_to 'Brochure Form', new_brochure_path %></li>
     <li><%= link_to 'RSVP Form', '#' %></li>
     <li><%= link_to 'Nomination Form', '#' %></li>
     <li><%= link_to 'Table Booking Form', '#' %></li>

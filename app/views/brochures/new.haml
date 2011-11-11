@@ -1,0 +1,44 @@
+= render :partial => "layouts/slider"
+%h1 Brochure Order Form
+TrainE TraidE
+JEWISH BUSINESS AWARDS LUNCH
+Recognising Enterprising Jewish Businesses and Individuals
+THURSDAY 23rd FEBRUARY 2012
+The London Marriot Grosvenor Square
+RECEPTION: 12.00PM LUNCH COMMENCES: 12.30PMM LUNCH ENDS: 2.30PM
+GUEST OF HONOUR AND BUSINESS ACHIEVEMENT AWARD
+GERLAD RONSON, CEO HERON INTERNATIONAL
+
+= form_for(@brochure) do |f|
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :company
+    = f.text_field :company
+  .field
+    = f.label :address_1
+    = f.text_field :address_1
+  .field
+    = f.label :address_2
+    = f.text_field :address_2
+  .field
+    = f.label :postcode
+    = f.text_field :postcode
+  .field
+    = f.label :telephone
+    = f.text_field :telephone
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :package
+    = f.text_field :package
+  .field
+    = f.label :payment
+    = f.text_field :payment
+  .field
+    = f.label :comments
+    = f.text_area :comments
+  .actions
+    = f.submit
