@@ -23,16 +23,7 @@
 <div id="shell">
   <div id="container" class="container">
     <div id="header" >
-      <%= image_tag('/images/ttl-banner.png') %>
-      <ul class="pills" data-tabs="tabs">
-        <li class="active"><a href="#home">Home</a></li>
-        <li><%= link_to 'Overview', overview_path %></li>
-        <li><%= link_to 'Brochure Form', '#' %></li>
-        <li><%= link_to 'RSVP Form', '#' %></li>
-        <li><%= link_to 'Nomination Form', '#' %></li>
-        <li><%= link_to 'Table Booking Form', '#' %></li>
-        <li><%= link_to 'About TrainE-TraidE', '#' %></li>
-      </ul>
+      <%= render :partial => "header" %>
     </div><!-- /header -->
     <div id="main">
       <%= yield %>
