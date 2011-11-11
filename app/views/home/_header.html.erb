@@ -1,10 +1,21 @@
 <%= image_tag('/images/ttl-banner.png') %>
-<ul class="pills" data-tabs="tabs">
-  <li class="<%= "active" if params[:action] == 'index' %>"> <%= link_to 'Home', root_path %> </li>
-  <li class="<%= "active" if params[:action] == 'overview' %>"><%= link_to 'Overview', overview_path %></li>
-  <li><%= link_to 'Brochure Form', '#' %></li>
-  <li><%= link_to 'RSVP Form', '#' %></li>
-  <li><%= link_to 'Nomination Form', '#' %></li>
-  <li><%= link_to 'Table Booking Form', '#' %></li>
-  <li><%= link_to 'About TrainE-TraidE', '#' %></li>
-</ul>
+
+<div class="nav-top">
+  <ul class="pills" data-tabs="tabs">
+    <li><%= link_to 'Brochure Form', '#' %></li>
+    <li><%= link_to 'RSVP Form', '#' %></li>
+    <li><%= link_to 'Nomination Form', '#' %></li>
+    <li><%= link_to 'Table Booking Form', '#' %></li>
+  </ul>
+</div>
+<div class="nav-bot">
+  <ul class="pills" data-tabs="tabs">
+    <li class="<%= "active" if params[:action] == 'index' %>"> <%= link_to 'Home', root_path %> </li>
+    <li class="<%= "active" if params[:action] == 'overview' %>"><%= link_to 'Overview', overview_path %></li>
+    <li><%= link_to 'Award Categories', '#' %></li>
+    <li><%= link_to 'How it Works', '#' %></li>
+    <li><%= link_to 'Benefits', '#' %></li>
+    <li><%= link_to 'Terms & Conditions', '#' %></li>
+    <li><%= link_to 'About TrainE-TraidE', '#' %></li>
+  </ul>
+</div>

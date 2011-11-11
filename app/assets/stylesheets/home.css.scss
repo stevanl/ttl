@@ -3,6 +3,26 @@
   width: 980px;
   background: $white;
 }
+.nav-top {
+  .pills {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    li {
+      font-weight: bold;
+      font-size: 11pt;
+    }
+  }
+}
+.nav-bot {
+  .pills {
+    width: 780px;
+    margin: 0 auto 10px auto;
+    li {
+      font-size: 10pt;
+    }
+  }
+}
 #footer {
   width: 940px;
   margin: 0 auto auto;
