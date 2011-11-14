@@ -15,15 +15,6 @@
   <%= stylesheet_link_tag "application" %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag "modernizr" %>
-  <%= javascript_include_tag "application" %>
-
-  <script type="text/javascript">
-    jQuery(function($){
-      $.supersized({
-        slides  :   [ {image : 'images/slideshow/1.jpg', title : 'Image Credit: Jam Events'} ]
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -45,8 +36,14 @@
   </div><!-- /footer -->
 </div><!-- /footer -->
 
-
-
+  <%= javascript_include_tag "application" %>
+  <script type="text/javascript">
+    jQuery(function($){
+      $.supersized({
+        slides  :   [ {image : 'images/slideshow/1.jpg', title : 'Image Credit: Jam Events'} ]
+      });
+    });
+  </script>
   <script type="text/javascript">
     jQuery(window).load(function(){
         jQuery("#ttlslider").nivoSlider({
