@@ -56,8 +56,8 @@ namespace :deploy do
   
   task :restart, :roles => :app do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-    run "bundle exec rake assets:precompile"
     sudo "/usr/local/nginx/sbin/nginx -s reload"
+    load 'deploy/assets'
     run "echo \"WEBSITE HAS BEEN DEPLOYED\""
   end
 
