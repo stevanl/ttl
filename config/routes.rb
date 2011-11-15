@@ -1,4 +1,6 @@
 Ttlunch2012::Application.routes.draw do
+  resources :nominations
+
   resources :rsvp
 
   resources :brochures

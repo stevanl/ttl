@@ -1,6 +1,6 @@
-class RsvpController < ApplicationController
+class NominationsController < ApplicationController
   def new
-    @rsvp = Rsvp.new
+    @nomination = Nomination.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -8,10 +8,10 @@ class RsvpController < ApplicationController
   end
 
   def create
-    @rsvp = Rsvp.new(params[:rsvp])
+    @nomination = Nomination.new(params[:nomination])
 
     respond_to do |format|
-      if @rsvp.save
+      if @nomination.save
         format.html { render "thanks" }
       else
         format.html { render action: "new" }

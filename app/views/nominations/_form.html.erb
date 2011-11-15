@@ -1,0 +1,28 @@
+<%= simple_form_for(@nomination) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    f.input :name
+    f.input :company
+    f.input :address_1
+    f.input :address_2
+    f.input :postcode
+    f.input :telephone
+    f.input :email
+    f.input :website
+    f.input :category
+    f.input :notified_company
+    f.input :nom_name
+    f.input :nom_address_1
+    f.input :nom_address_2
+    f.input :nom_postcode
+    f.input :nom_telephone
+    f.input :nom_email
+    f.input :reason
+    f.input :hear_about
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
