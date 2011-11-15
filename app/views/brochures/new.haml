@@ -3,7 +3,7 @@
 
 .bof
   = image_tag('/images/brochure_order_form.png')
-
+  
 .form
   = simple_form_for @brochure do |f|
     %fieldset
@@ -24,21 +24,6 @@
       .clearfix
         <div class="input">
         <ul class="inputs-list">
-        <li>
-        <label class="collection_radio" for="brochure_package_1">
-        <input type="radio" checked="" id="brochure_package_1" name="brochure[package]" value="Benefactor">
-        <span class="lbl">Benefactor</span><span class="lblcost">£10,000</span></label>
-        </li>
-        <li>
-        <label class="collection_radio" for="brochure_package_2">
-        <input type="radio" checked="" id="brochure_package_2" name="brochure[package]" value="Patron">
-        <span class="lbl">Patron</span><span class="lblcost">£5,000</span></label>
-        </li>
-        <li>
-        <label class="collection_radio" for="brochure_package_3">
-        <input type="radio" checked="" id="brochure_package_3" name="brochure[package]" value="Friend">
-        <span class="lbl">Friend</span><span class="lblcost">£2,500</span></label>
-        </li>
         <li>
         <label class="collection_radio" for="brochure_package_4">
         <input type="radio" checked="" id="brochure_package_4" name="brochure[package]" value="Platinum Page">
@@ -76,31 +61,52 @@
         <span class="lbl">Gold Corporate Package</span> <span class="lblcost">£2,000</span></label>
         <span class="help-block">One Table (ten people), gold page brochure advert and brand publicity at the event</span>
         </li>
+
+        .alert-message.block-message.warning.big
+          <li>
+          <label class="collection_radio" for="brochure_package_1">
+          <input type="radio" checked="" id="brochure_package_1" name="brochure[package]" value="Benefactor">
+          <span class="lbl">Benefactor</span><span class="lblcost">£10,000</span></label>
+          </li>
+          <li>
+          <label class="collection_radio" for="brochure_package_2">
+          <input type="radio" checked="" id="brochure_package_2" name="brochure[package]" value="Patron">
+          <span class="lbl">Patron</span><span class="lblcost">£5,000</span></label>
+          </li>
+          <li>
+          <label class="collection_radio" for="brochure_package_3">
+          <input type="radio" checked="" id="brochure_package_3" name="brochure[package]" value="Friend">
+          <span class="lbl">Friend</span><span class="lblcost">£2,500</span></label>
+          </li>
         </ul>
         </div>
 
-        <div class="input">
-        <ul class="inputs-list">
-        <li>
-        <label class="collection_radio long" for="brochure_payment_1">
-        <input type="radio" checked="" id="brochure_payment_1" name="brochure[payment]" value="Cheque">
-        <span class="lbl long">I will send a cheque payable to TrainE-TraidE, 314 Regents Park Road, London N3 2JX (Train For Employment Limited Registered U.K Charity Number 1118690)</span></label>
-        </li>
-        <li>
-        <label class="collection_radio long" for="brochure_payment_2">
-        <input type="radio" checked="" id="brochure_payment_2" name="brochure[payment]" value="Invoice">
-        <span class="lbl long">I require an invoice</span></label>
-        </li>
-        <li>
-        <label class="collection_radio long" for="brochure_payment_3">
-        <input type="radio" checked="" id="brochure_payment_3" name="brochure[payment]" value="BACS">
-        <span class="lbl long">I will make a BACS payment: </label><div class="card strong"><dl><dt>Account Name</dt><dd>Train for Employment</dd><dt>Bank:</dt><dd>Natwest</dd><dt>Sort Code:</dt><dd>51-50-11</dd><dt>Account Number:</dt><dd>66541026</dd><dt>Ref:</dt><dd>Please provide your name</dd></dl></div></span>
-        </li>
-        </ul>
-        </div>
+        .clearfix
+          <div class="input">
+          <ul class="inputs-list">
+          <li>
+          <label class="collection_radio long" for="brochure_payment_1">
+          <input type="radio" checked="" id="brochure_payment_1" name="brochure[payment]" value="Cheque">
+          <span class="lbl long">I will send a cheque payable to TrainE-TraidE, 314 Regents Park Road, London N3 2JX (Train For Employment Limited Registered U.K Charity Number   1118690)</span></label>
+          </li>
+          <li>
+          <label class="collection_radio long" for="brochure_payment_2">
+          <input type="radio" checked="" id="brochure_payment_2" name="brochure[payment]" value="Invoice">
+          <span class="lbl long">I require an invoice</span></label>
+          </li>
+          <li>
+          <label class="collection_radio long" for="brochure_payment_3">
+          <input type="radio" checked="" id="brochure_payment_3" name="brochure[payment]" value="BACS">
+          <span class="lbl long">I will make a BACS payment: </label><div class="card strong"><dl><dt>Account Name</dt><dd>Train for Employment</dd><dt>Bank:</dt><dd>Natwest</dd><dt>  Sort Code:</dt><dd>51-50-11</dd><dt>Account Number:</dt><dd>66541026</dd><dt>Ref:</dt><dd>Please provide your name</dd></dl></div></span>
+          </li>
+          </ul>
+          </div>
 
       .clearfix
         = f.input :comments, :input_html => { :size => '30x10' }
       .clearfix
         .input.button
-          = f.button :submit
+          = f.button :submit, :class => "btn large", :value => "Submit Order Form"
+      .clearfix
+        .alert-message.block-message.warning.contactme
+          %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong>

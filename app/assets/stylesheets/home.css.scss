@@ -77,7 +77,7 @@ form {
   label {
     padding-right: 10px;}
 
-  .string, .text, .tel, .email, li span {
+  .string, .text, .tel, .email, .integer, li span {
     color: $goldDark;
     font-weight: bold;
   }
@@ -94,6 +94,9 @@ input, textarea, select, .uneditable-input {
 #brochure_postcode {
   width: 100px
 }
+#rsvp_number_of_people {
+  width: 50px
+}
 #brochure_name, #brochure_company, #brochure_comments {
   width: 350px
 }
@@ -109,14 +112,29 @@ label.long {
 .card {
   background: $goldPale;
   width: 350px;
+  padding: 14px;
   @include box-shadow(0 2px 10px rgba(0,0,0,0.25));
   @include border-radius;
   dt, dd {
     border-bottom: 1px #ccc dashed;
-    padding: 5px 0;
+    padding: 1px 0;
     margin: 10px;
   }
   dd {
     padding-left: 10px;
   }
+}
+
+.contactme {
+  width: 600px;
+  margin: 0 auto 10px auto;
+  p {
+    font-weight: bold;
+  }
+}
+.inputs-list .big {
+  margin-left: 100px;
+  width: 500px;
+  li {
+    margin-left: 25px;}
 }

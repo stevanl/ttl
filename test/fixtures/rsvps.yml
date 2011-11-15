@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number_of_people: 
+  attendance: false
+  donation: MyString
+  name: MyString
+  name_2: MyString
+  company: MyString
+  address_1: MyString
+  address_2: MyString
+  postcode: MyString
+  telephone: MyString
+  email: MyString
+  payment: MyString
+
+two:
+  number_of_people: 
+  attendance: false
+  donation: MyString
+  name: MyString
+  name_2: MyString
+  company: MyString
+  address_1: MyString
+  address_2: MyString
+  postcode: MyString
+  telephone: MyString
+  email: MyString
+  payment: MyString

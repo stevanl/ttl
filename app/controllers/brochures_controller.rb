@@ -13,7 +13,7 @@ class BrochuresController < ApplicationController
 
     respond_to do |format|
       if @brochure.save
-        format.html { render action: "thanks", notice: 'Your brochure order form has been successfuly submitted. We will be in touch. Thank you.' }
+        format.html { render action: "thanks" }
       else
         format.html { render action: "new" }
       end

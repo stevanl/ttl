@@ -1,0 +1,71 @@
+= render :partial => "layouts/slider"
+%h1 RSVP Form
+
+.bof
+  = image_tag('/images/brochure_order_form.png')
+
+.form
+  = simple_form_for @rsvp do |f|
+    %fieldset
+      .clearfix
+        = f.input :number_of_people
+      .clearfix
+        <div class="input">
+        <ul class="inputs-list">
+        <li>
+        <label class="collection_radio long" for="rsvp_attendance_1">
+        <input type="radio" checked="" id="rsvp_payment_1" name="rsvp[attendance]" value="Attending">
+        <span class="lbl long">I/we are able to attend</span></label>
+        <span>I will send a payment of: <input class="string optional mini" id="rsvp_amount" maxlength="255" name="rsvp[amount]" size="50" type="text"> (£150)</span>
+        </li>
+        <li>
+        <label class="collection_radio long" for="rsvp_attendance_2">
+        <input type="radio" checked="" id="rsvp_payment_2" name="rsvp[attendance]" value="Not Attending">
+        <span class="lbl long">I/we are not able to attend</span></label>
+        <span>I will donate: <input class="string optional mini" id="rsvp_donation" maxlength="255" name="rsvp[donation]" size="50" type="text"></span>
+        </li>
+        </ul>
+        </div>
+      .clearfix
+        = f.input :name
+      .clearfix
+        = f.input :name_2
+      .clearfix
+        = f.input :company
+      .clearfix
+        = f.input :address_1
+      .clearfix
+        = f.input :address_2
+      .clearfix
+        = f.input :postcode, :input_html => { :width => '100px' }
+      .clearfix
+        = f.input :telephone
+      .clearfix
+        = f.input :email
+      .clearfix
+        <div class="input">
+        <ul class="inputs-list">
+        <li>
+        <label class="collection_radio long" for="rsvp_payment_1">
+        <input type="radio" checked="" id="rsvp_payment_1" name="rsvp[payment]" value="Cheque">
+        <span class="lbl long">I will send a cheque payable to TrainE-TraidE, 314 Regents Park Road, London N3 2JX (Train For Employment Limited Registered U.K Charity Number 1118690)</span></label>
+        </li>
+        <li>
+        <label class="collection_radio long" for="rsvp_payment_2">
+        <input type="radio" checked="" id="rsvp_payment_2" name="rsvp[payment]" value="Invoice">
+        <span class="lbl long">I require an invoice</span></label>
+        </li>
+        <li>
+        <label class="collection_radio long" for="rsvp_payment_3">
+        <input type="radio" checked="" id="rsvp_payment_3" name="rsvp[payment]" value="BACS">
+        <span class="lbl long">I will make a BACS payment: </label><div class="card strong"><dl><dt>Account Name</dt><dd>Train for Employment</dd><dt>Bank:</dt><dd>Natwest</dd><dt>Sort Code:</dt><dd>51-50-11</dd><dt>Account Number:</dt><dd>66541026</dd><dt>Ref:</dt><dd>Please provide your name</dd></dl></div></span>
+        </li>
+        </ul>
+        </div>
+      .clearfix
+        .input.button
+          = f.button :submit, :class => "btn large", :value => "Submit RSVP"
+      
+      .clearfix
+        .alert-message.block-message.warning.contactme
+          %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong>
