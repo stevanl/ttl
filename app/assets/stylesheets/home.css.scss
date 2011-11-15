@@ -92,12 +92,10 @@ input, textarea, select, .uneditable-input {
   width: 210px;
 }
 
-textarea#nomination_reason {
-  width: 450px
+textarea#brochure_comments, textarea#nomination_reason, textarea#nomination_hear_about {
+  width: 450px;
 }
-textarea#brochure_comments {
-  width: 450px
-}
+
 #brochure_postcode {
   width: 100px
 }
@@ -135,6 +133,7 @@ label.long {
 
 .contactme {
   width: 600px;
+  text-align:center;
   margin: 0 auto 10px auto;
   p {
     font-weight: bold;
@@ -165,4 +164,11 @@ span.collection_radio {
 .guide {
   margin-left: 140px;
   color: $goldDark;
+}
+@font-face {
+  font-family: Fertigo;
+  src: url(/fonts/Fertigo_PRO.otf) format("opentype");
+}
+h1, h2, h3 {
+  font-family:Fertigo, Arial, Helvetica, sans-serif;
 }

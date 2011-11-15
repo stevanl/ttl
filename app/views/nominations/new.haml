@@ -57,7 +57,9 @@
           = f.collection_radio :notified_company, [["Yes", " Yes"], ["No", " No"]], :first, :last
       .clearfix
         .guide In no more than 500 words say why you’re nominating this person or yourself for the award: 
-        = f.input :reason, :input_html => { :size => '30x10' }
+        = f.input :reason, :label => "Reason for nomination", :input_html => { :size => '30x10' }
+      .clearfix
+        = f.input :hear_about, :label => "Where did you hear about us?", :input_html => { :size => '30x5' }
       .clearfix
         .help-block
           %p 
@@ -69,4 +71,95 @@
       
       .clearfix
         .alert-message.block-message.warning.contactme
-          %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong>
+          %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong><br><br>
+          %p First round nominations open on 17th November 2011 and close on <strong><u>31st December 2011</u></strong>
+
+%p The nominations for the first round open on 17th November 2011 and close on <strong>31st December 2011</strong>. TrainE-TraidE’s Jewish Business Awards are all about recognising enterprising members of the Jewish community across the whole spectrum of their business development.
+%p This is a wonderful opportunity for you to nominate someone who you believe has been really successful in his or her business in a wealth of different ways and at different levels. You could even nominate yourself –so why not ‘go for it!’
+%h1#award-categories Award Categories
+
+%h2 1. Business of the Year
+%p Awarded to an outstanding business whose growth, ambition and quality of management has enabled it to deliver first-class results
+
+%h2 2. Start-Up of the Year
+%p Awarded to a new business that has been trading for less than 3 years and has already demonstrated the potential to be an outstanding success.
+
+%h2 3. Business Person of the Year
+%p This award will go to an outstanding business man or woman  who can best demonstrate ambition, energy, skill and vision, as well as tangible business success. This award is open to entrepreneurs who are enjoying success in building their own business, and to those employees who have had an outstanding impact in contributing to the successes of a larger organisation.
+
+%h2 4. Young Business Person of the Year
+%p This award will go to an outstanding young individual who can best demonstrate ambition, energy, skill and vision, as well as tangible business success. This award is open both to young entrepreneurs who are enjoying success in building their own business, and to those employees who have had an outstanding impact in contributing to the successes of a larger organisation.
+
+%h2 5. Business Achievement Award
+%p This award is given to a member of the Jewish community for his or her achievement in the field of business. The award is not open for nominations and will be chosen by the panel of judges.
+
+%hr
+
+%h1#how-it-works How it works
+%h2 The Awards
+%p TrainE-TraidE’s Jewish Business Awards recognise the best businesses and individuals either from within the Jewish community or impacting upon the lives of Jewish people in the UK
+
+%p TrainE-TraidE’s Jewish Business Awards are split into four different categories (for a full list of categories see above).
+%h2 How do you enter?
+%p If you believe that you, your business, or somebody you know deserves a TrainE-TraidE Jewish Business Award then please complete the attached nomination form. Judges will look favourably upon nominations from the people who really matter to your business - your customers. Your business can be nominated in any, or all, of the three categories. 
+%p The nominations can be done in different ways:
+%ul
+  %li by filling the entry form above 
+  %li complete the entry form on the Totally Jewish website
+
+%p First round nominations open on 17th November 2011 and close on <strong>31st December 2011</strong>.
+%h2 How are the awards judged?
+%p The judging panel is made up of respected members of the Jewish business community, TrainE-TraidE and our sponsors.
+%p The judging panel will decide after the closing date of the first round for entries, to select a shortlist of possible winners. These shortlists will be announced in January. The second round will take place in January with the final shortlists announced two weeks before the awards ceremony
+%p The award winners will be announced at TrainE-TraidE’s Business Awards Lunch which will take place on <strong>23rd February 2012</strong>. Tickets for the event are available by contacting <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a>
+%h2 What do you win?
+%p Winners of each category win a TrainE-TraidE Jewish Business Award plaque presented at the awards ceremony. There will also be publicity and marketing opportunities from being short-listed and winning the award as well as the right to use ‘Winner’ and ‘Finalist’ logos on your own marketing materials. 
+%p Coverage will be attained through our media partners the Jewish Chronicle.
+
+%hr
+
+%h2#benefits Benefits
+%p Nominees and winners of TrainE-TraidE’s Jewish Business Awards can look forward to real business and personal rewards: 
+%ul
+  %li Nomination represents validation by the wider business and Jewish communities
+  %li Nomination signifies acknowledgement and recognition of hard work, effort and results
+  %li There is a real sense of pride in being nominated
+  %li ‘Winner’ and ‘Finalist’ logos can be used on all marketing materials to make your business stand out from the crowd
+  %li Great promotional value through our media partners, the Jewish News and on the Totally Jewish website.
+  In addition: 
+  %li Awards will be presented at TrainE-TraidE’s Business Lunch in Feb 2012
+  %li The winners will be celebrated on the TrainE-TraidE Jewish Business Awards website and www.totallyjewish.com  after the ceremony
+
+%hr
+
+%h2#terms-conditions Terms & Conditions
+%p Before making your nomination, please read the following conditions of entry. 
+%ul
+  %li The closing date for first round entries will be 31st December 2011. Nominations received after that date will not be considered by the judging panel under any circumstances.
+  %li Businesses may enter more than one award category although a separate entry form must be completed for each award. 
+  %li Businesses entering the Awards must be able to show a link to the Jewish community or demonstrate how its work impacts upon the lives of Jewish people in the UK.
+  %li The judges' decision is final and no correspondence will be entered into.
+  %li Nominations will be treated in the strictest confidence and circulated only to members of the judging panel. All publicity about TrainE-TraidE’s Jewish Business Awards will be co-ordinated through JAM Events on behalf of TrainE-TraidE.
+  %li Companies sponsoring awards are not eligible to enter.
+  %li Shortlisted finalists will be notified by post or telephone week commencing 13th February 2012. 
+
+<script type="text/javascript">
+$(function(){
+$('#lnk-award-categories').click(function(){
+$('html, body').animate({ scrollTop: $('#award-categories').offset().top }, 1000);
+return false;
+});
+$('#lnk-how-it-works').click(function(){
+$('html, body').animate({ scrollTop: $('#how-it-works').offset().top }, 1000);
+return false;
+});
+$('#lnk-benefits').click(function(){
+$('html, body').animate({ scrollTop: $('#benefits').offset().top }, 1000);
+return false;
+});
+$('#lnk-terms-conditions').click(function(){
+$('html, body').animate({ scrollTop: $('#terms-conditions').offset().top }, 1000);
+return false;
+});
+});
+</script>
