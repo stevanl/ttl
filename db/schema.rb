@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111115171957) do
+ActiveRecord::Schema.define(:version => 20111115202613) do
 
   create_table "brochures", :force => true do |t|
     t.string   "name"
@@ -58,6 +58,22 @@ ActiveRecord::Schema.define(:version => 20111115171957) do
     t.string   "donation"
     t.string   "name"
     t.string   "name_2"
+    t.string   "company"
+    t.string   "address_1"
+    t.string   "address_2"
+    t.string   "postcode"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "payment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "table_bookings", :force => true do |t|
+    t.integer  "tables"
+    t.integer  "corporate_packages"
+    t.integer  "gold_packages"
+    t.string   "name"
     t.string   "company"
     t.string   "address_1"
     t.string   "address_2"

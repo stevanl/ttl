@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tables: 1
+  corporate_packages: 1
+  gold_packages: 1
+  name: MyString
+  company: MyString
+  address_1: MyString
+  address_2: MyString
+  postcode: MyString
+  telephone: MyString
+  email: MyString
+  payment: MyString
+
+two:
+  tables: 1
+  corporate_packages: 1
+  gold_packages: 1
+  name: MyString
+  company: MyString
+  address_1: MyString
+  address_2: MyString
+  postcode: MyString
+  telephone: MyString
+  email: MyString
+  payment: MyString

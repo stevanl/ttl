@@ -5,7 +5,7 @@
     <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'brochures' %>"><%= link_to 'Brochure Form', new_brochure_path %></li>
     <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'rsvp' %>"><%= link_to 'RSVP Form', new_rsvp_path %></li>
     <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'nominations' %>"><%= link_to 'Nomination Form', new_nomination_path %></li>
-    <li><%= link_to 'Table Booking Form', '#' %></li>
+    <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'table_bookings' %>"><%= link_to 'Table Booking Form', new_table_booking_path %></li>
   </ul>
 </div>
 <div class="nav-bot">

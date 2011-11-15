@@ -1,0 +1,74 @@
+= render :partial => "layouts/slider"
+.bof
+  = image_tag('/images/table_booking_form.png')
+
+%h1 Table Booking Form
+.form
+  = simple_form_for @table_booking do |f|
+    %fieldset
+      .clearfix
+        <div class="input">
+        <ul class="inputs-list">
+        <li>
+        <label class="collection_radio long" for="table_booking_table_package_1">
+        <input type="radio" id="table_booking_table_package_1" name="table_booking[table_package]" value="Table">
+        <span class="lbl long">Table(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> (£1,500)</span></label><br>
+        <span>Ten people</span>
+        </li><li>
+        <label class="collection_radio long" for="table_booking_table_package_2">
+        <input type="radio" id="table_booking_table_package_2" name="table_booking[table_package]" value="Corporate Package">
+        <span class="lbl long">Corporate Package(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> (£1,750)</span></label><br>
+        <span>One Table (ten people), full page brochure advert and brand publicity at the event</span>
+        </li><li>
+        <label class="collection_radio long" for="table_booking_table_package_3">
+        <input type="radio" id="table_booking_table_package_3" name="table_booking[table_package]" value="Gold Package">
+        <span class="lbl long">Gold Package(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> (£2,000)</span></label><br>
+        <span>One Table (ten people), gold page brochure advert and brand publicity at the event</span>
+        </li>
+        </ul>
+        </div>
+      .clearfix
+        = f.input :name
+      .clearfix
+        = f.input :company
+      .clearfix
+        = f.input :address_1
+      .clearfix
+        = f.input :address_2
+      .clearfix
+        = f.input :postcode, :input_html => { :width => '100px' }
+      .clearfix
+        = f.input :telephone
+      .clearfix
+        = f.input :email
+      .clearfix
+        <div class="input">
+        <ul class="inputs-list">
+        <li>
+        <label class="collection_radio long" for="table_booking_payment_1">
+        <input type="radio" id="table_booking_payment_1" name="table_booking[payment]" value="Cheque">
+        <span class="lbl long">I will send a cheque payable to TrainE-TraidE, 314 Regents Park Road, London N3 2JX (Train For Employment Limited Registered U.K Charity Number 1118690)</span></label>
+        </li>
+        <li>
+        <label class="collection_radio long" for="table_booking_payment_2">
+        <input type="radio" id="table_booking_payment_2" name="table_booking[payment]" value="Invoice">
+        <span class="lbl long">I require an invoice</span></label>
+        </li>
+        <li>
+        <label class="collection_radio long" for="table_booking_payment_3">
+        <input type="radio" id="table_booking_payment_3" name="table_booking[payment]" value="BACS">
+        <span class="lbl long">I will make a BACS payment: </label><div class="card strong"><dl><dt>Account Name</dt><dd>Train for Employment</dd><dt>Bank:</dt><dd>Natwest</dd><dt>Sort Code:</dt><dd>51-50-11</dd><dt>Account Number:</dt><dd>66541026</dd><dt>Ref:</dt><dd>Please provide your name</dd></dl></div></span>
+        </li>
+        </ul>
+      .clearfix
+        .help-block
+          %p 
+            %strong Note: 
+            To make a credit card payment please contact us on <strong>020 8371 3280</strong>. Receipts will be sent to acknowledge your payment.
+      .clearfix
+        .input.button
+          = f.button :submit, :class => "btn large", :value => "Submit Table Booking"
+      
+      .clearfix
+        .alert-message.block-message.warning.contactme
+          %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong>
