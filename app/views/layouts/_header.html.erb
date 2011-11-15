@@ -13,7 +13,7 @@
     <li class="<%= "active" if params[:action] == 'index' %>"> <%= link_to 'Home', root_path %> </li>
     <li class="<%= "active" if params[:action] == 'overview' %>"><%= link_to 'Overview', overview_path %></li>
     <li><%= link_to 'Award Categories', new_nomination_path(:anchor => 'award-categories'), :id => "lnk-award-categories" %></li>
-    <li><%= link_to 'How it Works', new_nomination_path(:anchor => 'award-how-it-works'), :id => "lnk-how-it-works" %></li>
+    <li><%= link_to 'How it Works', new_nomination_path(:anchor => 'how-it-works'), :id => "lnk-how-it-works" %></li>
     <li><%= link_to 'Benefits', new_nomination_path(:anchor => 'benefits'), :id => "lnk-benefits" %></li>
     <li><%= link_to 'Terms & Conditions', new_nomination_path(:anchor => 'terms-conditions'), :id => "lnk-terms-conditions" %></li>
     <li><%= link_to 'About TrainE-TraidE', about_path %></li>
