@@ -5,7 +5,7 @@
   = simple_form_for @nomination do |f|
     %fieldset
       .clearfix
-        %h3 I would like to nominate: 
+        %h3 I would like to nominate:
       .clearfix
         = f.input :name
       .clearfix
@@ -55,6 +55,19 @@
         %row
           %label.optionsRadio I have notified the company that I am nominating
           = f.collection_radio :notified_company, [["Yes", " Yes"], ["No", " No"]], :first, :last
+      %h3 Nominator's details:
+      .clearfix
+        = f.input :nom_name, :label => "Name"
+      .clearfix
+        = f.input :nom_address_1, :label => "Address 1"
+      .clearfix
+        = f.input :nom_address_2, :label => "Address 2"
+      .clearfix
+        = f.input :nom_postcode, :label => "Postcode", :input_html => { :width => '100px' }
+      .clearfix
+        = f.input :nom_telephone, :label => "Telephone"
+      .clearfix
+        = f.input :nom_email, :label => "Email"
       .clearfix
         .guide In no more than 500 words say why you’re nominating this person or yourself for the award: 
         = f.input :reason, :label => "Reason for nomination", :input_html => { :size => '30x10' }
