@@ -7,6 +7,8 @@
   = simple_form_for @brochure do |f|
     %fieldset
       .clearfix
+        %h3 Personal details
+      .clearfix
         = f.input :name
       .clearfix
         = f.input :company
@@ -20,6 +22,9 @@
         = f.input :telephone
       .clearfix
         = f.input :email
+    %fieldset
+      .clearfix
+        %h3 Advert details
       .clearfix
         <div class="input">
         <ul class="inputs-list">
@@ -79,7 +84,9 @@
           </li>
         </ul>
         </div>
-
+    %fieldset
+      .clearfix
+        %h3 Payment details
         .clearfix
           <div class="input">
           <ul class="inputs-list">

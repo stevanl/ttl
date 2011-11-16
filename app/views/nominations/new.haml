@@ -22,6 +22,7 @@
         = f.input :email
       .clearfix
         = f.input :website
+    %fieldset
       .clearfix
         %h3 For the following category:
         .help-block 
@@ -56,7 +57,9 @@
         %row
           %label.optionsRadio I have notified the company that I am nominating
           = f.collection_radio :notified_company, [["Yes", " Yes"], ["No", " No"]], :first, :last
-      %h3 Nominator's details:
+    %fieldset
+      .clearfix
+        %h3 Nominator's details:
       .clearfix
         = f.input :nom_name, :label => "Name"
       .clearfix

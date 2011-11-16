@@ -7,26 +7,30 @@
   = simple_form_for @table_booking do |f|
     %fieldset
       .clearfix
+        %h2 Package details
         <div class="input">
         <ul class="inputs-list">
         <li>
         <label class="collection_radio long" for="table_booking_table_package_1">
         <input type="radio" id="table_booking_table_package_1" name="table_booking[table_package]" value="Table">
-        <span class="lbl long">Table(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> (£1,500)</span></label><br>
+        <span class="lbl long">Table(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> <strong>£1,250</strong> <small>(£1,500 after 31st December 2011)</small></span></label><br>
         <span>Ten people</span>
         </li><li>
         <label class="collection_radio long" for="table_booking_table_package_2">
         <input type="radio" id="table_booking_table_package_2" name="table_booking[table_package]" value="Corporate Package">
-        <span class="lbl long">Corporate Package(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> (£1,750)</span></label><br>
+        <span class="lbl long">Corporate Package(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> <strong>£1,500</strong> <small>(£1,750 after 31st December 2011)</small></span></label><br>
         <span>One Table (ten people), full page brochure advert and brand publicity at the event</span>
         </li><li>
         <label class="collection_radio long" for="table_booking_table_package_3">
         <input type="radio" id="table_booking_table_package_3" name="table_booking[table_package]" value="Gold Package">
-        <span class="lbl long">Gold Package(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> (£2,000)</span></label><br>
+        <span class="lbl long">Gold Package(s) <input class="string optional mini" id="table_booking_table_package" maxlength="255" name="table_booking[table_package]" size="50" type="text"> <strong>£1,700</strong> <small>(£2,000 after 31st December 2011)</small></span></label><br>
         <span>One Table (ten people), gold page brochure advert and brand publicity at the event</span>
         </li>
         </ul>
         </div>
+    %fieldset
+      .clearfix
+        %h3 Personal details
       .clearfix
         = f.input :name
       .clearfix
@@ -41,7 +45,9 @@
         = f.input :telephone
       .clearfix
         = f.input :email
+    %fieldset
       .clearfix
+        %h3 Payment method
         <div class="input">
         <ul class="inputs-list">
         <li>

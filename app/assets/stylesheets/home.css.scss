@@ -1,3 +1,6 @@
+body, li {
+  color: #333;
+}
 #shell {
   margin: 0 auto;
   width: 980px;
@@ -41,8 +44,9 @@
   text-align: center;
 }
 
-.form {
+fieldset {
   background: $goldLight;
+  padding-bottom: 10px;
 }
 
 body {
@@ -80,11 +84,11 @@ form {
     padding-right: 10px;}
 
   .string, .text, .tel, .email, .integer, .optionsRadio, li span {
-    color: $goldDark;
+    // color: $goldDark;
     font-weight: bold;
   }
   .help-block {
-    color: $gold;
+    color: $grayDark;
     width: 100%;
   }
 }
@@ -147,7 +151,7 @@ label.long {
     margin-left: 25px;}
 }
 .inputs-list label strong {
-  color: $goldDark;
+  color: $black;
 }
 
 .media-partners {
@@ -157,21 +161,14 @@ label.long {
 .simple_form label.collection_radio, .simple_form label.collection_check_box {
   float: none;
   display: inline;
-  color: $goldDark;
+  // color: $goldDark;
 }
 span.collection_radio {
   padding-top: 6px
 }
 .guide {
   margin-left: 140px;
-  color: $goldDark;
-}
-@font-face {
-  font-family: Fertigo;
-  src: url(/fonts/Fertigo_PRO.otf) format("opentype");
-}
-h1, h2, h3 {
-  font-family:Fertigo, Arial, Helvetica, sans-serif;
+  // color: $goldDark;
 }
 .ebb {
   position:absolute;
@@ -180,6 +177,9 @@ h1, h2, h3 {
   z-index:2;
 }
 
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
 p.cta {
   text-align:center;
   margin: 15px 0;
