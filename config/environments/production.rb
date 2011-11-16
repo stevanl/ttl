@@ -1,5 +1,4 @@
-RAILS_ROOT = '/home/deploy/ttlunch2012/live/current'
-PASSWORD_FILE = File.join(RAILS_ROOT, '..', '..', 'shared', 'config', '.mpw')
+PASSWORD_FILE = YAML.load_file("#{Rails.root}/../../shared/config/.mpw")['password']
 
 Ttlunch2012::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
@@ -70,7 +69,7 @@ Ttlunch2012::Application.configure do
     :port                 => 587,
     :domain               => 'independentfx.com',
     :user_name            => 'stevan@independentfx.com',
-    :password             => '#{File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE}',
+    :password             => PASSWORD_FILE,
     :authentication       => 'plain',
     :enable_starttls_auto => true
   }

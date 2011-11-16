@@ -10,7 +10,7 @@ default_run_options[:pty] = true
 default_run_options[:shell] = false
 # Automatically symlink these directories from curent/public to shared/public.
 set :app_symlinks, %w(files)
-set :rails_config_files, %w(database.yml .mpw)
+set :rails_config_files, %w(database.yml)
 
 task :s do 
    set :rails_env, :test
