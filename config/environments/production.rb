@@ -69,7 +69,7 @@ Ttlunch2012::Application.configure do
     :port                 => 587,
     :domain               => 'independentfx.com',
     :user_name            => 'stevan@independentfx.com',
-    :password             => File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE,
+    :password             => '#{File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE}',
     :authentication       => 'plain',
     :enable_starttls_auto => true
   }
