@@ -15,13 +15,13 @@
         <ul class="inputs-list">
         <li>
         <label class="collection_radio long" for="rsvp_attendance_1">
-        <input type="radio" id="rsvp_payment_1" name="rsvp[amount]" value="Attending">
+        <input type="radio" id="rsvp_attendance_1" name="rsvp[attendance]" value="Attending">
         <span class="lbl long">I/we are able to attend</span></label>
         <span>I will send a payment of: <input class="string optional mini" id="rsvp_amount" maxlength="255" name="rsvp[amount]" size="50" type="text"> (£150)</span>
         </li>
         <li>
         <label class="collection_radio long" for="rsvp_attendance_2">
-        <input type="radio" id="rsvp_payment_2" name="rsvp[donation]" value="Not Attending">
+        <input type="radio" id="rsvp_attendance_2" name="rsvp[attendance]" value="Not Attending">
         <span class="lbl long">I/we are not able to attend</span></label>
         <span>I will donate: <input class="string optional mini" id="rsvp_donation" maxlength="255" name="rsvp[donation]" size="50" type="text"></span>
         </li>
@@ -80,3 +80,15 @@
       .clearfix
         .alert-message.block-message.warning.contactme
           %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong>
+
+<script>
+$(function(){
+$('#rsvp_amount').click(function(){
+$('#rsvp_attendance_1').attr('checked', true);
+return false;
+});
+$('#rsvp_donation').click(function(){
+$('#rsvp_attendance_2').attr('checked', true);
+return false;
+});});
+</script>
