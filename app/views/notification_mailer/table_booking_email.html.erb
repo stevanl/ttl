@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1><%= @person.name %> RSVP'd.</h1>
+    <table>
+      <tr>
+        <th>Table package:</th>
+        <td><%= @person.table_package %></td>
+      </tr>
+        <th>Name:</th>
+        <td><%= @person.name %></td>
+      </tr>
+      <tr>
+        <th>Company:</th>
+        <td><%= @person.company %></td>
+      </tr>
+      <tr>
+        <th>Address 1:</th>
+        <td><%= @person.address_1 %></td>
+      </tr>
+      <tr>
+        <th>Address 2:</th>
+        <td><%= @person.address_2 %></td>
+      </tr>
+      <tr>
+        <th>Postcode:</th>
+        <td><%= @person.postcode %></td>
+      </tr>
+      <tr>
+        <th>Telephone:</th>
+        <td><%= @person.telephone %></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><%= @person.email %></td>
+      </tr>
+      <tr>
+        <th>Payment:</th>
+        <td><%= @person.payment %></td>
+      </tr>
+    </table>
+  </body>
+</html>

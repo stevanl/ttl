@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1><%= @person.name %> RSVP'd.</h1>
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td><%= @person.name %></td>
+      </tr>
+      <tr><th>Nominee Details:</th><td>&nbsp;</td></tr>
+      <tr>
+        <th>Company:</th>
+        <td><%= @person.company %></td>
+      </tr>
+      <tr>
+        <th>Address 1:</th>
+        <td><%= @person.address_1 %></td>
+      </tr>
+      <tr>
+        <th>Address 2:</th>
+        <td><%= @person.address_2 %></td>
+      </tr>
+      <tr>
+        <th>Postcode:</th>
+        <td><%= @person.postcode %></td>
+      </tr>
+      <tr>
+        <th>Telephone:</th>
+        <td><%= @person.telephone %></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><%= @person.email %></td>
+      </tr>
+      <tr>
+        <th>Website:</th>
+        <td><%= @person.website %></td>
+      </tr>
+      <tr><th>Nominator's Details</th></tr>
+      <tr>
+        <th>Notified company?:</th>
+        <td><%= @person.notified_company %></td>
+      </tr>
+      <tr>
+        <th>Name:</th>
+        <td><%= @person.nom_name %></td>
+      </tr>
+      <tr>
+        <th>Address 1:</th>
+        <td><%= @person.nom_address_1 %></td>
+      </tr>
+      <tr>
+        <th>Address 2:</th>
+        <td><%= @person.nom_address_2 %></td>
+      </tr>
+      <tr>
+        <th>Postcode:</th>
+        <td><%= @person.nom_postcode %></td>
+      </tr>
+      <tr>
+        <th>Telephone:</th>
+        <td><%= @person.nom_telephone %></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><%= @person.nom_email %></td>
+      </tr>
+      <tr>
+        <th>Reason:</th>
+        <td><%= @person.reason %></td>
+      </tr>
+      <tr>
+        <th>Heard about TT:</th>
+        <td><%= @person.hear_about %></td>
+      </tr>
+    </table>
+  </body>
+</html>
