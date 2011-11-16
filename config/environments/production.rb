@@ -1,3 +1,4 @@
+RAILS_ROOT = '/home/deploy/ttlunch2012/live/current'
 PASSWORD_FILE = File.join(RAILS_ROOT, '..', '..', 'shared', 'config', '.mpw')
 
 Ttlunch2012::Application.configure do
