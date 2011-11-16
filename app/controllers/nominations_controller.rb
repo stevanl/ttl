@@ -12,6 +12,7 @@ class NominationsController < ApplicationController
 
     respond_to do |format|
       if @nomination.save
+        NotificationMailer.nomination_email(@nomination).deliver
         format.html { render "thanks" }
       else
         format.html { render action: "new" }

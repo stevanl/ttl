@@ -12,6 +12,7 @@ class RsvpController < ApplicationController
 
     respond_to do |format|
       if @rsvp.save
+        NotificationMailer.rsvp_email(@rsvp).deliver
         format.html { render "thanks" }
       else
         format.html { render action: "new" }
