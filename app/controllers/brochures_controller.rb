@@ -12,6 +12,7 @@ class BrochuresController < ApplicationController
 
     respond_to do |format|
       if @brochure.save
+        NotificationMailer.brochure_email(@brochure).deliver
         format.html { render action: "thanks" }
       else
         format.html { render action: "new" }
