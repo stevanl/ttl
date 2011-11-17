@@ -201,3 +201,21 @@ ul.inputs-list {
 .btn-nominate-now {
   text-align: center;
 }
+.ian-pic {
+  text-align: right;
+}
+.ian-quote {
+  width: 500px;
+  text-align: center;
+  .quote {
+    color: $goldDark;
+    font-size: 19pt;
+    margin: 10px 0 10px 0;
+    line-height: 1.6em;
+    margin-left: 30px;
+  }
+  .attribute {
+    font-style: italic;
+    color: $gold;
+  }
+}
