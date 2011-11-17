@@ -2,18 +2,18 @@ class NotificationMailer < ActionMailer::Base
   default from: "stevan@independentfx.com"
   def brochure_email(person)
     @person = person
-    mail(:to => 'stevan@mycurrencytransfer.com', :subject => "[TTL]: New Brochure Order Form")
+    mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com', :subject => "TTL: New Brochure Order Form")
   end
   def rsvp_email(person)
     @person = person
-    mail(:to => 'stevan@mycurrencytransfer.com', :subject => "[TTL]: New RSVP Form")
+    mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "TTL: New RSVP Form")
   end
   def nomination_email(person)
     @person = person
-    mail(:to => 'stevan@mycurrencytransfer.com', :subject => "[TTL]: New Nomination Submitted")
+    mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "TTL: New Nomination Submitted")
   end
   def table_booking_email(person)
     @person = person
-    mail(:to => 'stevan@mycurrencytransfer.com', :subject => "[TTL]: New Table Booking")
+    mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "TTL: New Table Booking")
   end
 end
