@@ -192,3 +192,9 @@ p.cta {
   border-color: $gold $gold $goldDark;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
+ul.inputs-list {
+  margin: 0 0 5px 20px;
+}
+.inputs-list input[type="radio"], .inputs-list input[type="checkbox"] {
+  margin-left: -16px;
+}
