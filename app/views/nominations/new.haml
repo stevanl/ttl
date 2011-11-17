@@ -1,5 +1,5 @@
 = render :partial => "layouts/slider"
-%h1 Nomination Form
+%h1#nominate Nomination Form
 
 .form
   = simple_form_for @nomination do |f|
@@ -107,6 +107,9 @@
 
 %p This award is given to a member of the Jewish community for his or her achievement in the field of business. The award is not open for nominations and will be chosen by the panel of judges. This year we are honoured to be presenting the award to Mr Gerald Ronson.
 
+%p.btn-nominate-now
+  = link_to image_tag('/images/btn-nominate-now.png'), '#nominate'
+
 %h1#how-it-works How it works
 
 %h2 The Awards
@@ -123,7 +126,10 @@
 
 %p Coverage will be attained through our media partners the Jewish News.
 
-%h2 How are the awards judged? <Please insert “Nominate Now” button here>
+%p.btn-nominate-now
+  = link_to image_tag('/images/btn-nominate-now.png'), '#nominate'
+
+%h2 How are the awards judged?
 
 %p The judging panel is made up of respected members of the Jewish business community, TrainE-TraidE and our sponsors.
 
@@ -131,13 +137,16 @@
 
 %p The finalists will be announced two weeks before the awards ceremony with the award winners being announced at TrainE-TraidE’s Business Awards Lunch which will take place on 23<sup>rd</sup> February 2012. Tickets for the event are available by contacting mark.curtis@traine-traide.org.uk
 
-%h2 What do you win? <Please insert “Nominate Now” button here>
+%h2 What do you win?
 
 %p Winners of each category win a TrainE-TraidE Business Award plaque presented at the awards ceremony. They will be invited to spend time with a relevant business expert. There will also be publicity and marketing opportunities from being short-listed and winning the award as well as the right to use ‘Winner’ and ‘Finalist’ logos on your own marketing materials.
 
 %p Coverage will be attained through our media partners the Jewish News.
 
-%h2#benefits Benefits <Please insert “Nominate Now” button here>
+%p.btn-nominate-now
+  = link_to image_tag('/images/btn-nominate-now.png'), '#nominate'
+
+%h2#benefits Benefits
 
 %p Nominees and winners of TrainE-TraidE’s Jewish Business Awards can look forward to real business and personal rewards:
 
@@ -153,7 +162,7 @@
   %li Awards will be presented at TrainE-TraidE’s Business Lunch in Feb 2012
   %li The winners will be celebrated on the TrainE-TraidE Jewish Business Awards website and www.totallyjewish.com after the ceremony
 
-%h2#terms-conditions Terms & Conditions <Please insert “Nominate Now” button here>
+%h2#terms-conditions Terms & Conditions
 
 %p Before making your nomination, please read the following conditions of entry.
 
@@ -166,22 +175,29 @@
   %li Companies sponsoring awards are not eligible to enter.
   %li Shortlisted finalists will be notified by post or telephone week commencing <strong>13<sup>th</sup> February 2012</strong>.
 
+%p.btn-nominate-now
+  = link_to image_tag('/images/btn-nominate-now.png'), '#nominate'
+
 <script type="text/javascript">
 $(function(){
 $('#lnk-award-categories').click(function(){
-$('html, body').animate({ scrollTop: $('#award-categories').offset().top }, 1000);
+$('html, body').animate({ scrollTop: $('#award-categories').offset().top }, 500);
 return false;
 });
 $('#lnk-how-it-works').click(function(){
-$('html, body').animate({ scrollTop: $('#how-it-works').offset().top }, 1000);
+$('html, body').animate({ scrollTop: $('#how-it-works').offset().top }, 500);
 return false;
 });
 $('#lnk-benefits').click(function(){
-$('html, body').animate({ scrollTop: $('#benefits').offset().top }, 1000);
+$('html, body').animate({ scrollTop: $('#benefits').offset().top }, 500);
 return false;
 });
 $('#lnk-terms-conditions').click(function(){
-$('html, body').animate({ scrollTop: $('#terms-conditions').offset().top }, 1000);
+$('html, body').animate({ scrollTop: $('#terms-conditions').offset().top }, 500);
+return false;
+});
+$('.btn-nominate-now img').click(function(){
+$('html, body').animate({ scrollTop: $('#nominate').offset().top }, 500);
 return false;
 });
 });
