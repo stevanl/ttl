@@ -81,7 +81,7 @@ Ttlunch2012::Application.configure do
   ActionMailer::Base.smtp_settings = {
     :domain             => "mail.traine.org.uk",
     :address            => "mail.traine.org.uk",
-    :port               => 25
+    :port               => 25,
     :authentication => :login ,
     :user_name          => 'traine.org.uk\awards',
     :password           => 'traine123',
