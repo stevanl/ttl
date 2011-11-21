@@ -33,19 +33,15 @@ $(function () {
   var msie6 = $.browser == 'msie' && $.browser.version <= 7;
   
   if (!msie6) {
-    var top = $('#nav-box').offset().top - parseFloat($('#nav-box').css('margin-top').replace(/auto/, 0));
+    var top = $('#main').offset().top - parseFloat($('#main').css('margin-top').replace(/auto/, 0));
     $(window).scroll(function (event) {
       // what the y position of the scroll is
       var y = $(this).scrollTop();
       
-      // whether that's below the form
       if (y >= top) {
-        // if so, ad the fixed class
         $('#nav-box').addClass('fixed');
-        // $('.ebb').fadeOut();
         $('.ebb').animate({ right: -20, top: 20 }, {duration: 'fast'});
       } else {
-        // otherwise remove it
         $('#nav-box').removeClass('fixed');
         $('.ebb').animate({ right: 120, top: -60 }, {duration: 'fast'});
       }
