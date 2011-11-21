@@ -1,5 +1,5 @@
 class NotificationMailer < ActionMailer::Base
-  default from: "stevan@independentfx.com"
+  default from: "awards@traine-traide.org.uk"
   def brochure_email(person)
     @person = person
     mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com', :subject => "TTL: New Brochure Order Form")
@@ -14,7 +14,7 @@ class NotificationMailer < ActionMailer::Base
   end
   def nominee_email(person)
     @person = person
-    mail(:to => person.email, :bcc => 'stevan@mycurrencytransfer.com',:subject => "You have been nominated for a TrainE-TraidE Business Award!")
+    mail(:to => person.email, :subject => "You have been nominated for a TrainE-TraidE Business Award!")
   end
   def table_booking_email(person)
     @person = person
