@@ -63,17 +63,33 @@ Ttlunch2012::Application.configure do
 
 
   
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :domain               => 'independentfx.com',
-    :user_name            => 'stevan@independentfx.com',
-    :password             => PASSWORD_FILE,
-    :authentication       => 'plain',
-    :enable_starttls_auto => true
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   :address              => "smtp.gmail.com",
+  #   :port                 => 587,
+  #   :domain               => 'independentfx.com',
+  #   :user_name            => 'stevan@independentfx.com',
+  #   :password             => PASSWORD_FILE,
+  #   :authentication       => 'plain',
+  #   :enable_starttls_auto => true
+  # }
+  # config.action_mailer.perform_deliveries = true
+  # config.action_mailer.raise_delivery_errors = true
+
+
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :domain             => "mail.traine.org.uk",
+    :address            => "mail.traine.org.uk",
+    :port               => 25
+    :authentication => :login ,
+    :user_name          => 'traine.org.uk\awards',
+    :password           => 'traine123',
   }
 
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
+  ActionMailer::Base.perform_deliveries = true
+  ActionMailer::Base.raise_delivery_errors = true
+  ActionMailer::Base.default_charset = "utf-8"
+  ActionMailer::Base.default_content_type = "text/html"
+
 end
