@@ -219,3 +219,27 @@ ul.inputs-list {
     color: $gold;
   }
 }
+
+
+#header {
+  position: relative;
+}
+#nav-box-wrapper {
+  position: absolute;
+  width: 950px;
+  left:-5px;
+  z-index:9999;
+  background: $white;
+}
+#nav-box {
+  top: 0px;
+  background: $white;
+  margin-left:1px;
+  width: 950px;
+  height: 84px;
+}
+#nav-box.fixed {
+  position: fixed;
+  top: 0;
+  @include box-shadow;
+}

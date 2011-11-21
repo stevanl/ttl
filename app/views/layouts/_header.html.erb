@@ -1,22 +1,55 @@
 <%= image_tag('/images/ttl-banner.png') %>
 
-<div class="nav-top">
-  <div class="ebb"><%= link_to image_tag('/images/early-bird-badge.png', :size => '90x90'), new_table_booking_path %></div>
-  <ul class="pills" data-tabs="tabs">
-    <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'brochures' %>"><%= link_to 'Brochure Form', new_brochure_path %></li>
-    <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'rsvp' %>"><%= link_to 'RSVP Form', new_rsvp_path %></li>
-    <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'nominations' %>"><%= link_to 'Nomination Form', new_nomination_path %></li>
-    <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'table_bookings' %>"><%= link_to 'Table Booking Form', new_table_booking_path %></li>
-  </ul>
+<div style="position:relative;height: 84px">
+  <div id="nav-box-wrapper">
+    <div class="nav-box" id="nav-box">
+      <div class="nav-top">
+        <div class="ebb"><%= link_to image_tag('/images/early-bird-badge.png', :size => '90x90'), new_table_booking_path %></div>
+        <ul class="pills" data-tabs="tabs">
+          <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'brochures' %>"><%= link_to 'Brochure Form', new_brochure_path %></li>
+          <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'rsvp' %>"><%= link_to 'RSVP Form', new_rsvp_path %></li>
+          <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'nominations' %>"><%= link_to 'Nomination Form', new_nomination_path %></li>
+          <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'table_bookings' %>"><%= link_to 'Table Booking Form', new_table_booking_path %></li>
+        </ul>
+      </div>
+      <div class="nav-bot">
+        <ul class="pills" data-tabs="tabs">
+          <li class="<%= "active" if params[:action] == 'index' %>"> <%= link_to 'Home', root_path %> </li>
+          <li class="<%= "active" if params[:action] == 'overview' %>"><%= link_to 'Overview', overview_path %></li>
+          <li><%= link_to 'Award Categories', new_nomination_path(:anchor => 'award-categories'), :id => "lnk-award-categories" %></li>
+          <li><%= link_to 'How it Works', new_nomination_path(:anchor => 'how-it-works'), :id => "lnk-how-it-works" %></li>
+          <li><%= link_to 'Benefits', new_nomination_path(:anchor => 'benefits'), :id => "lnk-benefits" %></li>
+          <li><%= link_to 'Terms & Conditions', new_nomination_path(:anchor => 'terms-conditions'), :id => "lnk-terms-conditions" %></li>
+          <li><%= link_to 'About TrainE-TraidE', about_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="nav-bot">
-  <ul class="pills" data-tabs="tabs">
-    <li class="<%= "active" if params[:action] == 'index' %>"> <%= link_to 'Home', root_path %> </li>
-    <li class="<%= "active" if params[:action] == 'overview' %>"><%= link_to 'Overview', overview_path %></li>
-    <li><%= link_to 'Award Categories', new_nomination_path(:anchor => 'award-categories'), :id => "lnk-award-categories" %></li>
-    <li><%= link_to 'How it Works', new_nomination_path(:anchor => 'how-it-works'), :id => "lnk-how-it-works" %></li>
-    <li><%= link_to 'Benefits', new_nomination_path(:anchor => 'benefits'), :id => "lnk-benefits" %></li>
-    <li><%= link_to 'Terms & Conditions', new_nomination_path(:anchor => 'terms-conditions'), :id => "lnk-terms-conditions" %></li>
-    <li><%= link_to 'About TrainE-TraidE', about_path %></li>
-  </ul>
-</div>
+
+<script>
+$(function () {
+  
+  var msie6 = $.browser == 'msie' && $.browser.version <= 7;
+  
+  if (!msie6) {
+    var top = $('#nav-box').offset().top - parseFloat($('#nav-box').css('margin-top').replace(/auto/, 0));
+    $(window).scroll(function (event) {
+      // what the y position of the scroll is
+      var y = $(this).scrollTop();
+      
+      // whether that's below the form
+      if (y >= top) {
+        // if so, ad the fixed class
+        $('#nav-box').addClass('fixed');
+        // $('.ebb').fadeOut();
+        $('.ebb').animate({ right: -20, top: 20 }, {duration: 'fast'});
+      } else {
+        // otherwise remove it
+        $('#nav-box').removeClass('fixed');
+        $('.ebb').animate({ right: 120, top: -60 }, {duration: 'fast'});
+      }
+    });
+  }  
+});
+</script>
