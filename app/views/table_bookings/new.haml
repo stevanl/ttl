@@ -9,7 +9,7 @@
       .clearfix
         %h2 Package details
         <div class="input">
-        <ul class="inputs-list">
+        <ul class="inputs-list" id="package">
         <li>
         <label class="collection_radio long" for="table_booking_table_package_1">
         <input type="radio" id="table_booking_table_package_1" name="table_booking[table_package]" value="Table">
@@ -92,4 +92,7 @@ $('#table_booking_gold_amount').click(function(){
 $('#table_booking_gold_package_3').attr('checked', true);
 return false;
 });
+
+$("#new_table_booking").validate({rules: {package: "required"}});
+
 </script>
