@@ -1,0 +1,123 @@
+%html
+  %head
+  <meta charset="utf-8">
+  = csrf_meta_tag
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+  = @title.nil? ? "TrainE-TraidE Business Awards 2012" : @title+" | TrainE-TraidE Business Awards 2012"
+  </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  = stylesheet_link_tag "application"
+  = csrf_meta_tags 
+  = javascript_include_tag "modernizr" 
+  = javascript_include_tag "application" 
+
+  %body{:class => "fb"}
+    .fbox{:width => 500}
+    - @title = "Nomination form"
+    %h1#nominate Nomination Form
+
+    .form
+      = simple_form_for @nomination do |f|
+        %fieldset
+          .clearfix
+            %h3 I would like to nominate:
+          .clearfix
+            = f.input :name
+          .clearfix
+            = f.input :company
+          .clearfix
+            = f.input :address_1
+          .clearfix
+            = f.input :address_2
+          .clearfix
+            = f.input :postcode, :input_html => { :width => '100px' }
+          .clearfix
+            = f.input :telephone
+          .clearfix
+            = f.input :email
+          .clearfix
+            = f.input :website
+        %fieldset
+          .clearfix
+            %h3 For the following category:
+            .help-block 
+              %p (please tick just one box and complete a new form for each award nomination)
+          .clearfix
+            <div class="input nomcat">
+            %label.optionsRadio Category
+            <ul class="inputs-list">
+            <li>
+            <label class="collection_radio long" for="nomination_category_1">
+            <input type="radio" id="nomination_category_1" name="nomination[category]" value="Business of the Year">
+            <span class="lbl long"><strong>Business of the Year</strong> &mdash; Awarded to an outstanding business whose growth, ambition and quality of management has enabled it to deliver first-class results</span></label>
+            </li>
+            <li>
+            <label class="collection_radio long" for="nomination_category_2">
+            <input type="radio" id="nomination_category_2" name="nomination[category]" value="Start-Up of the Year">
+            <span class="lbl long"><strong>Start-Up of the Year</strong> &mdash; Awarded to a new business that has been trading for less than 3 years and has already demonstrated the potential to be an outstanding success.</span></label>
+            </li>
+            <li>
+            <label class="collection_radio long" for="nomination_category_3">
+            <input type="radio" id="nomination_category_3" name="nomination[category]" value="Business Person of the Year">
+            <span class="lbl long"><strong>Business Person of the Year</strong> &mdash; Awarded to an outstanding businessman or businesswoman  who can best demonstrate ambition, energy, skill and vision, as well as tangible business success. This award is open to entrepreneurs who are enjoying success in building their own business, and to those employees who have had an outstanding impact in contributing to the successes of a larger organisation.</span></label>
+            </li>
+            </ul>
+          .clearfix
+            %row
+              %label.optionsRadio I have notified the company/person that I am nominating
+              = f.collection_radio :notified_company, [["Yes", " Yes"], ["No", " No"]], :first, :last
+        %fieldset
+          .clearfix
+            %h3 Nominator's details:
+          .clearfix
+            = f.input :nom_name, :label => "Name"
+          .clearfix
+            = f.input :nom_address_1, :label => "Address 1"
+          .clearfix
+            = f.input :nom_address_2, :label => "Address 2"
+          .clearfix
+            = f.input :nom_postcode, :label => "Postcode", :input_html => { :width => '100px' }
+          .clearfix
+            = f.input :nom_telephone, :label => "Telephone"
+          .clearfix
+            = f.input :nom_email, :label => "Email"
+          .clearfix
+            .guide In no more than 500 words say why you’re nominating this person or yourself for the award: 
+            = f.input :reason, :label => "Reason for nomination", :input_html => { :size => '30x10' }
+          .clearfix
+            = f.input :hear_about, :label => "Where did you hear about the TrainE-TraidE Business Awards?", :input_html => { :size => '30x5' }
+          .clearfix
+            .input.button
+              = f.button :submit, :class => "btn large", :value => "Submit Nomination"
+          
+          .clearfix
+            .alert-message.block-message.warning.contactme
+              %p If you have any queries please email <a href="mailto:mark.curtis@traine-traide.org.uk">mark.curtis@traine-traide.org.uk</a> or call <strong>020 8371 3280</strong><br><br>
+
+    <script type="text/javascript">
+    $(function(){
+    $('#lnk-award-categories').click(function(){
+    $('html, body').animate({ scrollTop: $('#award-categories').offset().top-100 }, 500);
+    return false;
+    });
+    $('#lnk-how-it-works').click(function(){
+    $('html, body').animate({ scrollTop: $('#how-it-works').offset().top-100 }, 500);
+    return false;
+    });
+    $('#lnk-benefits').click(function(){
+    $('html, body').animate({ scrollTop: $('#benefits').offset().top-100 }, 500);
+    return false;
+    });
+    $('#lnk-terms-conditions').click(function(){
+    $('html, body').animate({ scrollTop: $('#terms-conditions').offset().top-100 }, 500);
+    return false;
+    });
+    $('.btn-nominate-now img').click(function(){
+    $('html, body').animate({ scrollTop: $('#nominate').offset().top-100 }, 500);
+    return false;
+    });
+    });
+    </script>

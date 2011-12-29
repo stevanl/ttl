@@ -243,3 +243,29 @@ ul.inputs-list {
   top: 0;
   @include box-shadow;
 }
+
+body.fb {
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0); 
+  -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  width: 500px;
+  fieldset, h1, h2, h3, div {
+    width: 500px;
+  }
+  h3, p {
+    padding-left: 5px;
+  }
+  li, .guide {
+    width: 320px !important;
+  }
+  .guide {
+    padding: 5px 0 10px 0;
+  }
+  .alert-message {
+    width: 430px !important;
+    padding: 14px 14px 4px 14px;
+  }
+  textarea#brochure_comments, textarea#nomination_reason, textarea#nomination_hear_about {
+    width: 340px;
+  }
+}

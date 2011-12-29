@@ -7,6 +7,11 @@ class NominationsController < ApplicationController
     end
   end
 
+  def fb
+    @nomination = Nomination.new
+    render :layout => false
+  end
+
   def create
     @nomination = Nomination.new(params[:nomination])
 

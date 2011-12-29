@@ -9,5 +9,6 @@ Ttlunch2012::Application.routes.draw do
 
   get "overview" => 'home#overview'
   get 'about' => 'home#about'
+  get 'fb' => 'nominations#fb'
   root :to => "home#index"
 end
