@@ -10,7 +10,7 @@ class NotificationMailer < ActionMailer::Base
   end
   def nomination_email(person)
     @person = person
-    mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "TTL: New Nomination Submitted")
+    mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com', 'marcjmaley@yahoo.co.uk'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "TTL: New Nomination Submitted")
   end
   def nominee_email(person)
     @person = person
@@ -19,5 +19,9 @@ class NotificationMailer < ActionMailer::Base
   def table_booking_email(person)
     @person = person
     mail(:to => ['mark@jam-events.com', 'debbie@traine-traide.org.uk', 'shraga@traine-traide.org.uk', 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "TTL: New Table Booking")
+  end
+  def table_booking_person_email(person)
+    @person = person
+    mail(:to => [person.email, 'desi@jam-events.com'], :bcc => 'stevan@mycurrencytransfer.com',:subject => "Thank you for booking a table for the TrainE-TraidE Lunch 2012")
   end
 end

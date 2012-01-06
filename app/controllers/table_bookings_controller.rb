@@ -13,6 +13,7 @@ class TableBookingsController < ApplicationController
     respond_to do |format|
       if @table_booking.save
         NotificationMailer.table_booking_email(@table_booking).deliver
+        NotificationMailer.table_booking_person_email(@table_booking).deliver
         format.html { render "thanks" }
       else
         format.html { render action: "new" }

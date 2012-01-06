@@ -4,7 +4,7 @@
   <div id="nav-box-wrapper">
     <div class="nav-box" id="nav-box">
       <div class="nav-top">
-        <div class="ebb"><%= link_to image_tag('/images/early-bird-badge.png', :size => '90x90'), new_table_booking_path %></div>
+        <div class="ebb"><%= link_to image_tag('/images/nominate-now-badge.png', :size => '90x90'), new_table_booking_path %></div>
         <ul class="pills" data-tabs="tabs">
           <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'brochures' %>"><%= link_to 'Brochure Form', new_brochure_path %></li>
           <li class="<%= "active" if params[:action] == 'new' && params[:controller] == 'rsvp' %>"><%= link_to 'RSVP Form', new_rsvp_path %></li>
