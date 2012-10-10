@@ -5,7 +5,8 @@
 
 // Links
 // $linkColor:         #0069d6;
-$linkColor:         #b39353;
+// $linkColor:         #b39353;
+$linkColor:         #b0b0b0;
 $linkColorHover:    darken($linkColor, 15);
 
 // Grays
@@ -28,7 +29,8 @@ $purple:            #7a43b6;
 $gold:              #b39353;
 
 // TT colours
-$gold:              #b39353;
+// $gold:              #b39353;
+$gold:              #b0b0b0;
 $goldDark:          darken($gold, 10%);
 $goldLight:         lighten($gold, 25%);
 $goldPale:          lighten($gold, 40%);
