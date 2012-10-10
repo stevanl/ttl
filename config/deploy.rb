@@ -1,4 +1,4 @@
-set :application, "ttlunch2012"
+set :application, "ttlunch2013"
 set :user, "deploy"
 set :domain, "ttlunch2012.com"
 set :repository,  "git@github.com:stevanl/ttl.git"
