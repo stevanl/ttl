@@ -22,6 +22,6 @@ class NotificationMailer < ActionMailer::Base
   end
   def table_booking_person_email(person)
     @person = person
-    mail(:to => [person.email], :bcc => 'stevan@mycurrencytransfer.com',:subject => "Thank you for booking a table for the TrainE-TraidE Lunch 2012")
+    mail(:to => [person.email], :bcc => 'stevan@mycurrencytransfer.com',:subject => "Thank you for booking a table for the TrainE-TraidE Lunch 2013")
   end
 end
