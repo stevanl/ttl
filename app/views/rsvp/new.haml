@@ -63,6 +63,11 @@
         <span class="lbl long">I require an invoice</span></label>
         </li>
         <li>
+        <label class="collection_radio long" for="rsvp_payment_4">
+        <input type="radio" id="rsvp_payment_4" name="rsvp[payment]" value="Credit Card">
+        <span class="lbl long">Please contact me for my credit card details</span></label>
+        </li>
+        <li>
         <label class="collection_radio long" for="rsvp_payment_3">
         <input type="radio" id="rsvp_payment_3" name="rsvp[payment]" value="BACS">
         <span class="lbl long">I will make a BACS payment: </label><div class="card strong"><dl><dt>Account Name</dt><dd>Train for Employment</dd><dt>Bank:</dt><dd>Natwest</dd><dt>Sort Code:</dt><dd>51-50-11</dd><dt>Account Number:</dt><dd>66541026</dd><dt>Ref:</dt><dd>Please provide your name</dd></dl></div></span>
@@ -72,14 +77,14 @@
         .help-block
           %p 
             %strong Note: 
-            To make a credit card payment please contact us on <strong>020 8371 3280</strong>. Receipts will be sent to acknowledge your payment.
+            To make a credit card payment please contact us on <strong>020 8371 3286</strong>. Receipts will be sent to acknowledge your payment.
       .clearfix
         .input.button
           = f.button :submit, :class => "btn large", :value => "Submit RSVP"
       
       .clearfix
         .alert-message.block-message.warning.contactme
-          %p If you have any queries please email <a href="mailto:mark@jam-events.com ">mark@jam-events.com </a> or call <strong>020 8371 3280</strong>
+          %p If you have any queries please email <a href="mailto:mark@jam-events.com ">mark@jam-events.com </a> or call <strong>020 8371 3286</strong>
 
 <script>
 $(function(){

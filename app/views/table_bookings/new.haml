@@ -11,11 +11,6 @@
         <div class="input">
         <ul class="inputs-list" id="package">
         <li>
-        <label class="collection_radio long" for="table_booking_table_package_1">
-        <input type="radio" id="table_booking_table_package_1" name="table_booking[table_package]" value="Table">
-        <span class="lbl long">Table(s) <input class="string optional mini" id="table_booking_table_amount" maxlength="255" name="table_booking[table_amount]" size="50" type="text"> <strong>@ £1,500</strong> per table</span></label><br>
-        <span>Ten people</span>
-        </li><li>
         <label class="collection_radio long" for="table_booking_table_package_2">
         <input type="radio" id="table_booking_table_package_2" name="table_booking[table_package]" value="Corporate Package">
         <span class="lbl long">Corporate Package(s) <input class="string optional mini" id="table_booking_corporate_amount" maxlength="255" name="table_booking[corporate_amount]" size="50" type="text"> <strong>@ £1,750</strong> per table</span></label><br>
@@ -61,6 +56,11 @@
         <span class="lbl long">I require an invoice</span></label>
         </li>
         <li>
+        <label class="collection_radio long" for="table_booking_payment_4">
+        <input type="radio" id="table_booking_payment_4" name="table_booking[payment]" value="CreditCard">
+        <span class="lbl long">Please contact me for my credit card details</span></label>
+        </li>
+        <li>
         <label class="collection_radio long" for="table_booking_payment_3">
         <input type="radio" id="table_booking_payment_3" name="table_booking[payment]" value="BACS">
         <span class="lbl long">I will make a BACS payment: </label><div class="card strong"><dl><dt>Account Name</dt><dd>Train for Employment</dd><dt>Bank:</dt><dd>Natwest</dd><dt>Sort Code:</dt><dd>51-50-11</dd><dt>Account Number:</dt><dd>66541026</dd><dt>Ref:</dt><dd>Please provide your name</dd></dl></div></span>
@@ -70,14 +70,14 @@
         .help-block
           %p 
             %strong Note: 
-            To make a credit card payment please contact us on <strong>020 8371 3280</strong>. Receipts will be sent to acknowledge your payment.
+            To make a credit card payment please contact us on <strong>020 8371 3286</strong>. Receipts will be sent to acknowledge your payment.
       .clearfix
         .input.button
           = f.button :submit, :class => "btn large", :value => "Submit Table Booking"
       
       .clearfix
         .alert-message.block-message.warning.contactme
-          %p If you have any queries please email <a href="mailto:mark@jam-events.com ">mark@jam-events.com </a> or call <strong>020 8371 3280</strong>
+          %p If you have any queries please email <a href="mailto:mark@jam-events.com ">mark@jam-events.com </a> or call <strong>020 8371 3286</strong>
 <script>
 $(function(){
 $('#table_booking_table_amount').click(function(){
