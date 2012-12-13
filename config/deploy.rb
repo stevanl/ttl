@@ -1,6 +1,6 @@
 set :application, "ttlunch2013"
 set :user, "deploy"
-set :domain, "ttlunch2012.com"
+set :domain, "ttlunch2013.com"
 set :repository,  "git@github.com:stevanl/ttl.git"
 set :repository_cache, "git_master"
 set :use_sudo, false
@@ -23,9 +23,9 @@ task :l do
   set :deploy_to, "/home/deploy/#{application}/live"
 end
 
-role :app, "ttlunch2012.com"
-role :web, "ttlunch2012.com"
-role :db,  "ttlunch2012.com", :primary => true
+role :app, "ttlunch2013.com"
+role :web, "ttlunch2013.com"
+role :db,  "ttlunch2013.com", :primary => true
 
 after "deploy:update_code", "deploy:copy_config_files"
 
